@@ -8,7 +8,8 @@ Plugins used:
 
 - lualine
 
-- github_theme (github_dark_default)
+- github_theme
+    - github_dark_default
 
 - gitsigns
 
