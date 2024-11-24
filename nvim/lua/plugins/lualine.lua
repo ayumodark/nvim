@@ -3,7 +3,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     require('lualine').setup({
-      options = { theme = "ayudark"}
+      options = { theme = "ayu_dark"}
     })
   end
 }
