@@ -6,8 +6,10 @@ return 	{
     require("mini.pairs").setup()
     require("mini.tabline").setup()
     require("mini.git").setup()
+    require("mini.pick").setup()
 
     vim.keymap.set("n", "<leader>fr", ":lua MiniFiles.open()<CR>")
+    vim.keymap.set("n", "<leader>ff", ":Pick files<CR>")
 
     vim.keymap.set("n", "<leader>ga", ":Git add .<CR>")
     vim.keymap.set("n", "<leader>gc", ":Git commit<CR>")
