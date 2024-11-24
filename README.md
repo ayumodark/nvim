@@ -1,4 +1,4 @@
-my nvim configuration
+Plugins used:
 
 - mini
     - mini.pairs
