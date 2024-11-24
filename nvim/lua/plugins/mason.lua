@@ -9,6 +9,7 @@ return {
           package_uninstalled = "✗"
         }
       }
-    })
+    })  -- This is the closing parenthesis for setup
   end
 }
+
