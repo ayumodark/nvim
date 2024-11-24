@@ -5,6 +5,7 @@ Plugins used:
     - mini.files
     - mini.tabline
     - mini.git
+    - mini.pick
 
 - lualine
 
@@ -12,6 +13,8 @@ Plugins used:
     - github_dark_default
 
 - gitsigns
+
+- neogit
 
 - mason
     - mason-lspconfig
