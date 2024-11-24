@@ -10,6 +10,8 @@ return 	{
     vim.keymap.set("n", "<leader>fr", ":lua MiniFiles.open()<CR>")
     vim.keymap.set("n", "<leader>fc", ":lua MiniFiles.close()<CR>")
 
-    vim.keymap.set("n", "<leader>g", ":Git")
+    vim.keymap.set("n", "<leader>ga", ":Git add .<CR>")
+    vim.keymap.set("n", "<leader>gc", ":Git commit<CR>")
+    vim.keymap.set("n", "<leader>gh", ":Git push<CR>")
   end,
 }
