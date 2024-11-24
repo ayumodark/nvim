@@ -21,7 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.g.background = "light
+vim.g.background = "light"
 vim.wo.number = true
 
 vim.cmd("set expandtab")
