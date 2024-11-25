@@ -16,6 +16,8 @@ return {
       null_ls.setup({
           sources = {},
     })
+      vim.keymap.set("n", "<leader>fr", " lua vim.lsp.buf.format()<cr>")
+    end,
   },
   {
     "hrsh7th/nvim-cmp",
