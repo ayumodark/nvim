@@ -36,6 +36,17 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
+    
+  vim.keymap.set("n", "<leader>f", ":lua MiniFiles.open()<cr>")
+  vim.keymap.set("n", "<leader>p", ":Pick files<cr>")
+
+  vim.keymap.set("n", "<leader>fr", " lua vim.lsp.buf.format()<cr>")
+  
+  vim.keymap.set("n", "<leader>ga", ":Git add .<cr>")
+  vim.keymap.set("n", "<leader>gc", ":Git commit<cr>")
+  vim.keymap.set("n", "<leader>gp", ":Git push<cr>")
+  vim.keymap.set("n", "<leader>gb", ":Neogit cwd=%:p:h kind=floating<cr>")
+
   install = { colorscheme = { "nord" } },
   checker = { enabled = true },
 })
