@@ -9,7 +9,7 @@ return {
   },
   {
     "williamboman/mason.nvim",
-    opts = {
+    opts = function()
       ui = {
         icons = {
           package_installed = "✓",
@@ -17,6 +17,6 @@ return {
           package_uninstalled = "✗",
         }
       }
-    },
+    end,
   },
 }
