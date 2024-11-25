@@ -1,11 +1,9 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    opts = {},
   }
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = {}
   },
   {
     "williamboman/mason.nvim",

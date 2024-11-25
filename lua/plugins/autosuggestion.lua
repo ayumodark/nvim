@@ -1,7 +1,6 @@
 return {
   {
     "hrsh7th/cmp-nvim-lsp"
-    opts = {},
   },
   {
     "L3MON4D3/LuaSnip",
@@ -9,20 +8,18 @@ return {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
     },
-    opts = {}
   },
   {
   "nvimtools/none-ls.nvim",
-  opts = {
+  opts = function()
       local null_ls = require("null-ls")
       null_ls.setup({
           sources = {},
     })
-    },
   },
   {
     "hrsh7th/nvim-cmp",
-    opts = {
+    opts = function()
       local cmp = require("cmp")
       require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -50,6 +47,6 @@ return {
           { name = "buffer" },
         }),
       })
-    },
+    end,
   },
 }

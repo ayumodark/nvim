@@ -1,11 +1,9 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
-    opts = {},
   },
   {
     "echasnovski/mini.git",
-    opts = {},
   },
   {
     "NeogitOrg/neogit",
@@ -15,6 +13,5 @@ return {
       "echasnovski/mini.pick",
     },
     config = true
-    opts = {}
   },
 }

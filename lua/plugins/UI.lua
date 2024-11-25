@@ -1,9 +1,9 @@
 return {
   {
     "shaunsingh/nord.nvim",
-    opts = {
+    opts = function()
       vim.cmd("colorscheme nord")
-    },
+    end,
   },
   {
     "lukas-reineke/indent-blankline.nvim",
@@ -11,26 +11,24 @@ return {
     dependencies = {
       "echasnovski/mini.indentscope"
     },
-    opts = {},
   },
   {
     "echasnovski/mini.tabline",
-    opts = {},
   },
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { 
       "nvim-tree/nvim-web-devicons"
     },
-    opts = {
+    opts = function()
       options = {
         theme = "nord"
       }
-    },
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
+    opts = function()
       ensure_installed = {},
       ignore_install = {},
       sync_install = false,
@@ -49,6 +47,6 @@ return {
           end
         end,
       },
-    }
+    end,
   },
 }
