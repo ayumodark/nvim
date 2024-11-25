@@ -12,6 +12,15 @@ return {
     opts = {}
   },
   {
+  "nvimtools/none-ls.nvim",
+  opts = {
+      local null_ls = require("null-ls")
+      null_ls.setup({
+          sources = {},
+    })
+    },
+  },
+  {
     "hrsh7th/nvim-cmp",
     opts = {
       local cmp = require("cmp")
