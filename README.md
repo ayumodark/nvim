@@ -9,6 +9,8 @@ cd ~/.config && git clone -b main --single-branch https://github.com/ayumodark/n
 ```
 
 # File Structure
+This is the recommended file structure by lazy.nvim
+
 ```
 ~/.config/nvim
 ├── lua
@@ -21,4 +23,56 @@ cd ~/.config && git clone -b main --single-branch https://github.com/ayumodark/n
 │       ├── autosuggestion.lua
 │       └── git.lua
 └── init.lua
+```
+
+`init.lua` calls lazy.nvim settings from lua/config/lazy.lua it simply calls `require("config.lazy")`
+
+`lazy.lua` installs lazy
+```
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+
+***
+
+require("lazy").setup({
+  spec = {
+    { import = "plugins" },
+  },
+  install = { colorscheme = { "nord" } },
+  checker = { enabled = true },
+})
+```
+
+And also defines vim settings before everything
+```
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+
+vim.g.background = "light"
+vim.wo.number = true
+
+vim.opt.swapfile = false
+
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 ```
