@@ -18,7 +18,7 @@ return {
       "echasnovski/mini.pick",
     },
     config = true
-    opts = function()
+    opts = function(),
       vim.keymap.set("n", "<leader>gb", ":Neogit cwd=%:p:h kind=floating<cr>")
     end,
   },
