@@ -29,6 +29,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function()
+      build = ":TSUpdate",
       ensure_installed = { "lua" },
       ignore_install = {},
       sync_install = false,
