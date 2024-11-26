@@ -1,14 +1,16 @@
 return {
   {
     "echasnovski/mini.pick",
-    opts = function()
+    config = function()
+      require("mini.pick").setup()
       vim.keymap.set("n", "<leader>p", ":Pick files<cr>")
     end,
   },
   {
     "echasnovski/mini.files",
-    opts = function()
-       vim.keymap.set("n", "<leader>f", ":lua MiniFiles.open()<cr>")
+    config = function()
+      require("mini.files").setup()
+      vim.keymap.set("n", "<leader>f", ":lua MiniFiles.open()<cr>")
     end,
   },
   {

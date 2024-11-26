@@ -32,7 +32,7 @@ vim.keymap.set("n", "<c-j>", ":wincmd j<cr>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
-vim.keymap.set("n", "<c-b>", ":bnext<cr>)
+vim.keymap.set("n", "<c-b>", ":bnext<cr>")
 
 require("lazy").setup({
   spec = {
@@ -41,4 +41,3 @@ require("lazy").setup({
   install = { colorscheme = { "nord" } },
   checker = { enabled = true },
 })
-  install = { colorscheme = { "nord" } },

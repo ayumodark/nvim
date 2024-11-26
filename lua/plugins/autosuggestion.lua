@@ -13,7 +13,7 @@ return {
   },
   {
   "nvimtools/none-ls.nvim",
-  opts = function()
+  config = function()
     local null_ls = require("null-ls")
       null_ls.setup({
           sources = {},
@@ -23,7 +23,7 @@ return {
   },
   {
     "hrsh7th/nvim-cmp",
-    opts = function()
+    config = function()
       local cmp = require("cmp")
       require("luasnip.loaders.from_vscode").lazy_load()
 
