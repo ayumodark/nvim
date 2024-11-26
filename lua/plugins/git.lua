@@ -17,8 +17,8 @@ return {
       "sindrets/diffview.nvim",
       "echasnovski/mini.pick",
     },
-    config = true
-    opts = function(),
+    config = true,
+    opts = function()
       vim.keymap.set("n", "<leader>gb", ":Neogit cwd=%:p:h kind=floating<cr>")
     end,
   },
