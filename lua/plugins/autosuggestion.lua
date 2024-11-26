@@ -1,6 +1,7 @@
 return {
   {
-    "hrsh7th/cmp-nvim-lsp"
+    "hrsh7th/cmp-nvim-lsp",
+    opts = {},
   },
   {
     "L3MON4D3/LuaSnip",
@@ -8,15 +9,16 @@ return {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
     },
+    opts = {},
   },
   {
   "nvimtools/none-ls.nvim",
   opts = function()
-      local null_ls = require("null-ls")
+    local null_ls = require("null-ls")
       null_ls.setup({
           sources = {},
-    })
-      vim.keymap.set("n", "<leader>fr", " lua vim.lsp.buf.format()<cr>")
+      })
+    vim.keymap.set("n", "<leader>fr", ":lua vim.lsp.buf.format()<cr>")
     end,
   },
   {
