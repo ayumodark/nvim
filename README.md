@@ -58,6 +58,7 @@ require("lazy").setup({
 
 And also defines vim settings before everything
 ```
+***
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
@@ -77,4 +78,5 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
 vim.keymap.set("n", "<c-b>", ":bnext<cr>")
+***
 ```
