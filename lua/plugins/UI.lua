@@ -12,7 +12,7 @@ return {
   },
   {
       "echasnovski/mini.indentscope",
-      opts = {}
+      opts = {},
   },
   {
     "echasnovski/mini.tabline",
