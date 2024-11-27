@@ -7,6 +7,7 @@
 ```
 cd ~/.config && git clone -b main --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git nvim/README.md
 ```
+<hr>
 <details>
 <summary>File Structure</summary>
 
@@ -26,16 +27,19 @@ This is the recommended file structure by lazy.nvim, every change in the `lua` d
 └── init.lua
 ```
 </details>
+
 <details>
-<summary>`init.lua`</summary>
+<summary><code>init.lua</code></summary>
 
 calls lazy.nvim settings in lua/config/lazy.lua it simply contains
 
 ```
 require("config.lazy")
 ```
+</details>
+
 <details>
-<summary>`lazy.lua`</summary>
+<summary><code>lazy.lua</code></summary>
 
 Installs lazy.nvim
 
