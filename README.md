@@ -7,9 +7,10 @@
 ```
 cd ~/.config && git clone -b main --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git nvim/README.md
 ```
+<details>
+<summary>File Structure</summary>
 
-# File Structure
-This is the recommended file structure by lazy.nvim
+This is the recommended file structure by lazy.nvim, every change in the `lua` directory is dynamically loaded 
 
 ```
 ~/.config/nvim
@@ -24,10 +25,20 @@ This is the recommended file structure by lazy.nvim
 │       └── git.lua
 └── init.lua
 ```
+</details>
+<details>
+<summary>`init.lua`</summary>
 
-`init.lua` calls lazy.nvim settings from lua/config/lazy.lua it simply calls `require("config.lazy")`
+calls lazy.nvim settings in lua/config/lazy.lua it simply contains
 
-`lazy.lua` installs lazy
+```
+require("config.lazy")
+```
+<details>
+<summary>`lazy.lua`</summary>
+
+Installs lazy.nvim
+
 ```
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -56,7 +67,8 @@ require("lazy").setup({
 })
 ```
 
-And also defines vim settings before everything
+And defines vim settings before everything
+
 ```
 ***
 vim.g.mapleader = " "
