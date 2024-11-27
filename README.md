@@ -5,7 +5,7 @@
 
 # Quick Install
 ```
-cd ~/.config && git clone -b nvim --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
+cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
 ```
 <hr>
 <details>
