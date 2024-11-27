@@ -11,6 +11,10 @@ return {
     "brenoprata10/nvim-highlight-colors",
     opts = {},
   },
+    {
+    "j-hui/fidget.nvim",
+    opts = {},
+  },
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
@@ -34,23 +38,6 @@ return {
         },
       })
     end,
-  },
-  {
-    "rcarriga/nvim-notify",
-    config = function()
-      vim.notify = require("notify")
-      require("notify").history()
-      require("notify").setup({
-        render = "wrapped-compact",
-        stages = "fade_in_slide_out",
-        background_colour = "FloatShadow",
-        timeout = 1000,
-      })
-    end,
-  },
-  {
-    "j-hui/fidget.nvim",
-    opts = {},
   },
   {
     "nvim-treesitter/nvim-treesitter",
