@@ -12,6 +12,10 @@ return {
 		opts = {},
 	},
 	{
+		"j-hui/fidget.nvim",
+		opts = {},
+	},
+	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
 		opts = {},
