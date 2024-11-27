@@ -22,11 +22,12 @@ return {
 					null_ls.builtins.formatting.prettierd,
 				},
 			})
-			vim.keymap.set("n", "<leader>fr", ":lua vim.lsp.buf.format()<cr>")
+			vim.keymap.set("n", "<leader>r", ":lua vim.lsp.buf.format()<cr>")
 		end,
 	},
 	{
 		"hrsh7th/nvim-cmp",
+    lazy = true,
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
