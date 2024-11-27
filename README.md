@@ -57,7 +57,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+--foo
 ***
+--bar
 
 require("lazy").setup({ -- load lazy default settings
   spec = {
@@ -71,6 +73,7 @@ require("lazy").setup({ -- load lazy default settings
 And declares vim settings before loading anything
 
 ```
+--foo
 ***
 vim.g.mapleader = " " -- defines <leader>, used for keybinds
 
@@ -93,6 +96,7 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 -- buffer navigation (Ctrl+b), swaps through every open buffer
 vim.keymap.set("n", "<c-b>", ":bnext<cr>")
 ***
+--bar
 ```
 </details>
 </details>
