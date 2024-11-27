@@ -15,7 +15,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+
+vim.opt.termguicolors = true
 
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")

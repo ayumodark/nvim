@@ -1,11 +1,5 @@
 return {
   {
-    "shaunsingh/nord.nvim",
-    config = function()
-      vim.cmd("colorscheme nord")
-    end,
-  },
-  {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     opts = {},
@@ -17,6 +11,16 @@ return {
   {
     "echasnovski/mini.tabline",
     opts = {},
+  },
+  {
+    "brenoprata10/nvim-highlight-colors",
+    opts = {},
+  },
+  {
+    "shaunsingh/nord.nvim",
+    config = function()
+      vim.cmd("colorscheme nord")
+    end, 
   },
   {
     "nvim-lualine/lualine.nvim",
