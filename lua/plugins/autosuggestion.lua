@@ -19,6 +19,7 @@ return {
 				sources = {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.black,
+					null_ls.builtins.formatting.prettierd,
 				},
 			})
 			vim.keymap.set("n", "<leader>fr", ":lua vim.lsp.buf.format()<cr>")
@@ -54,14 +55,23 @@ return {
 					{ name = "buffer" },
 				}),
 			})
-      formatting = {
-        format = require("nvim-highlight-colors").format
-      }
+			formatting = {
+				format = require("nvim-highlight-colors").format,
+			}
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			require("lspconfig")["lua_ls"].setup({
 				capabilities = capabilities,
 			})
 			require("lspconfig")["pyright"].setup({
+				capabilities = capabilities,
+			})
+			require("lspconfig")["cssls"].setup({
+				capabilities = capabilities,
+			})
+			require("lspconfig")["html"].setup({
+				capabilities = capabilities,
+			})
+			require("lspconfig")["ts_ls"].setup({
 				capabilities = capabilities,
 			})
 		end,
