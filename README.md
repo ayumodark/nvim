@@ -2,6 +2,8 @@
 - Install `neovim`
 - Install `git`
 - Install `gcc`, or any other c compiler
+- Install `npm`
+- Install `nodejs`
 
 # Quick Install
 ```
