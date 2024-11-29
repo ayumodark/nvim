@@ -8,12 +8,12 @@ return {
   {
     "echasnovski/mini.tabline",
     lazy = true,
-    event = {"BufNewFile", "BufRead"},
+    event = {"BufNewFile", "BufRead", "InsertEnter"},
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
-    event = {"BufNewFile", "BufRead"},
+    event = {"BufNewFile", "BufRead", "InsertEnter"},
     opts = {},
   }, 
   {
@@ -45,7 +45,7 @@ return {
   {
     "lukas-reineke/indent-blankline.nvim",
     lazy = true,
-    event = {'BufNewFile', 'BufRead'},
+    event = {'BufNewFile', 'BufRead', "InsertEnter"},
     main = "ibl",
     opts = {},
   },
@@ -73,7 +73,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = true,
-    event = {"BufNewFile", "BufRead"},
+    event = {"BufNewFile", "BufRead", "InsertEnter"},
     build = ":TSUpdate",
     config = function()
       local config = require("nvim-treesitter.configs")
