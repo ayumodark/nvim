@@ -1,24 +1,27 @@
 return {
   {
     "echasnovski/mini.indentscope",
+    lazy = true,
+    event = "InsertEnter",
     opts = {},
   },
   {
     "echasnovski/mini.tabline",
+    lazy = true,
+    event = {"BufNewFile", "BufRead"},
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
+    event = {"BufNewFile", "BufRead"},
     opts = {},
-  },
-    {
-    "j-hui/fidget.nvim",
-    opts = {},
-  },
+  }, 
   {
     "folke/noice.nvim",
+    lazy = true,
+    event = {"BufNewFile", "BufRead"},
     dependencies = {
-      "MunifTanjim/nui.nvim",
+      {"MunifTanjim/nui.nvim", lazy = true}
     },
     config = function()
       require("noice").setup({
@@ -41,19 +44,23 @@ return {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
+    lazy = true,
+    event = {'BufNewFile', 'BufRead'},
     main = "ibl",
     opts = {},
   },
   {
     "shaunsingh/nord.nvim",
+    lazy = false,
     config = function()
       vim.cmd("colorscheme nord")
     end,
   },
   {
     "nvim-lualine/lualine.nvim",
+    lazy = false,
     dependencies = {
-      "nvim-tree/nvim-web-devicons",
+      {"nvim-tree/nvim-web-devicons", lazy = true},
     },
     config = function()
       require("lualine").setup({
@@ -65,6 +72,8 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    lazy = true,
+    event = {"BufNewFile", "BufRead"},
     build = ":TSUpdate",
     config = function()
       local config = require("nvim-treesitter.configs")
