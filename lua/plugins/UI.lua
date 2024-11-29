@@ -19,7 +19,7 @@ return {
   {
     "folke/noice.nvim",
     lazy = true,
-    event = {"BufNewFile", "BufRead"},
+    event = {"BufNewFile", "BufRead", "VimEnter"},
     dependencies = {
       {"MunifTanjim/nui.nvim", lazy = true}
     },
