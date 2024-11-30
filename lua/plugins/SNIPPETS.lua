@@ -7,8 +7,8 @@ return {
       "hrsh7th/cmp-nvim-lsp", lazy = true,
       "neovim/nvim-lspconfig", lazy = true,
       "L3MON4D3/LuaSnip", lazy = true,
-      "cmp_luasnip", lazy = true,
-      "friendly-snippets", lazy = true,
+      "saadparwaiz1/cmp_luasnip", lazy = true,
+      "rafamadriz/friendly-snippets", lazy = true,
     },
     config = function()
       local cmp = require("cmp")
