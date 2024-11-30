@@ -1,4 +1,6 @@
 # Images
+- Dashboard
+    font: Casksydia NF Mono
 ![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
 # Pre-Install
 - Install `neovim`
