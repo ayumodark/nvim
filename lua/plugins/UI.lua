@@ -21,7 +21,7 @@ return {
     lazy = true,
     event = {"BufNewFile", "BufRead", "VimEnter"},
     dependencies = {
-      {"MunifTanjim/nui.nvim", lazy = true}
+      "MunifTanjim/nui.nvim", lazy = true,
     },
     config = function()
       require("noice").setup({
@@ -34,10 +34,10 @@ return {
         },
         presets = {
           bottom_search = true,
-          command_palette = false,
+          command_palette = true,
           long_message_to_split = true,
-          inc_rename = false,
-          lsp_doc_border = false,
+          inc_rename = true,
+          lsp_doc_border = true,
         },
       })
     end,
@@ -60,7 +60,7 @@ return {
     "nvim-lualine/lualine.nvim",
     lazy = false,
     dependencies = {
-      {"nvim-tree/nvim-web-devicons", lazy = true},
+      "nvim-tree/nvim-web-devicons", lazy = true,
     },
     config = function()
       require("lualine").setup({
@@ -68,6 +68,28 @@ return {
           theme = "nord",
         },
       })
+    end,
+  },
+  {
+    "goolord/alpha-nvim",
+    lazy = false,
+    dependencies = {"nvim-tree/nvim-web-devicons", lazy = true},
+    config = function()
+      local startify = require("alpha.themes.startify")
+      startify.section.header.val = {
+        [[                                                                       ]],
+        [[                                                                     ]],
+        [[       ████ ██████           █████      ██                     ]],
+        [[      ███████████             █████                             ]],
+        [[      █████████ ███████████████████ ███   ███████████   ]],
+        [[     █████████  ███    █████████████ █████ ██████████████   ]],
+        [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+        [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+        [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+        [[                                                                       ]],
+      }
+      startify.file_icons.provider = "devicons"
+      require("alpha").setup(startify.config)
     end,
   },
   {

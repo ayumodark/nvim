@@ -1,31 +1,14 @@
 return {
   {
-    "nvimtools/none-ls.nvim",
-    lazy = true,
-    keys = {"<leader>r", ":lua vim.lsp.buf.format()<cr>"},
-    dependencies = {"j-hui/fidget.nvim", lazy = true},
-    config = function()
-      local null_ls = require("null-ls")
-      null_ls.setup({
-        sources = {
-          null_ls.builtins.formatting.stylua,
-          null_ls.builtins.formatting.black,
-          null_ls.builtins.formatting.prettierd,
-        },
-      })
-      vim.keymap.set("n", "<leader>r", ":lua vim.lsp.buf.format()<cr>")
-    end,
-  },
-  {
     "hrsh7th/nvim-cmp",
     lazy = true,
     event = "InsertEnter",
     dependencies = {
-      {"hrsh7th/cmp-nvim-lsp", lazy = true},
-      {"neovim/nvim-lspconfig", lazy = true},
-      {"L3MON4D3/LuaSnip", lazy = true},
-      {"cmp_luasnip", lazy = true},
-      {"friendly-snippets", lazy = true},
+      "hrsh7th/cmp-nvim-lsp", lazy = true,
+      "neovim/nvim-lspconfig", lazy = true,
+      "L3MON4D3/LuaSnip", lazy = true,
+      "cmp_luasnip", lazy = true,
+      "friendly-snippets", lazy = true,
     },
     config = function()
       local cmp = require("cmp")
@@ -45,13 +28,13 @@ return {
           ["<c-k>"] = cmp.mapping.scroll_docs(4),
           ["<c-space>"] = cmp.mapping.complete(),
           ["<c-q>"] = cmp.mapping.abort(),
-          ["<cr>"] = cmp.mapping.confirm({ select = true }),
+          ["<cr>"] = cmp.mapping.confirm({select = true}),
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },
-          { name = "luasnip" }
+          {name = "nvim_lsp"},
+          {name = "luasnip"}
         }, {
-          { name = "buffer" },
+          {name = "buffer"},
         }),
       })
       local capabilities = require("cmp_nvim_lsp").default_capabilities()

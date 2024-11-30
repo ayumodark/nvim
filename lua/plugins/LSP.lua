@@ -4,8 +4,8 @@ return {
     lazy = true,
     cmd = "Mason",
     dependencies = {
-      {"neovim/nvim-lspconfig", lazy = true},
-      {"jay-babu/mason-null-ls.nvim", lazy = true},
+      "neovim/nvim-lspconfig", lazy = true,
+      "jay-babu/mason-null-ls.nvim", lazy = true,
     },
 		config = function()
 			require("mason").setup({
@@ -22,10 +22,9 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = true,
-    cmd = "Lspinfo",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pyright", "cssls", "html", "ts_ls" },
+        ensure_installed = {"lua_ls", "pyright", "cssls", "html", "ts_ls"},
         automatic_installation = true,
       })
     end,
@@ -33,10 +32,9 @@ return {
   {
     "jay-babu/mason-null-ls.nvim",
     lazy = true,
-    cmd = "NullLsinfo",
     config = function()
       require("mason-null-ls").setup({
-        ensure_installed = { "stylua", "black", "prettierd"},
+        ensure_installed = {"stylua", "black", "prettierd"},
         automatic_installation = true,
       })
     end,
