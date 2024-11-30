@@ -1,3 +1,5 @@
+# Images
+![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
 # Pre-Install
 - Install `neovim`
 - Install `git`
@@ -21,11 +23,11 @@ This is the recommended file structure by lazy.nvim, every change in the `lua` d
 │   ├── config
 │   │   └── lazy.lua
 │   └── plugins
+│       ├── FORMATTER.lua
+│       ├── GIT.lua
 │       ├── LSP.lua
 │       ├── UI.lua
-│       ├── UX.lua
-│       ├── autosuggestion.lua
-│       └── git.lua
+│       └── UX.lua
 └── init.lua
 ```
 <details>
@@ -77,25 +79,34 @@ And declares vim settings before loading anything
 ```
 --foo
 ***
-vim.g.mapleader = " " -- defines <leader>, used for keybinds
+-- hotkey used for keybinds
+vim.g.mapleader = " "
 
-vim.cmd("set expandtab") -- use space instead of tab
-vim.cmd("set tabstop=2") -- width of the character
-vim.cmd("set softtabstop=2") -- number of whitespace to use while editing
-vim.cmd("set shiftwidth=2") -- number of whitespace to use
+-- enables true color for terminals
+vim.opt.termguicolors = true
 
-vim.g.background = "light" -- selection/ui theme
-vim.wo.number = true -- shows line number on the left side
+-- tabs spaces and width
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
 
-vim.opt.swapfile = false -- disables swap file creation
+-- Default vim UI
+vim.g.background = "light"
 
--- pane navigation using vim bindings (Ctrl+k)
+-- shows line number
+vim.wo.number = true
+
+-- disable swap file creation
+vim.opt.swapfile = false
+
+-- naviagate panes with vim keybinds (ctrl+k)
 vim.keymap.set("n", "<c-k>", ":wincmd k<cr>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<cr>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
--- buffer navigation (Ctrl+b), swaps through every open buffer
+-- swaps through every open buffer (ctrl+b)
 vim.keymap.set("n", "<c-b>", ":bnext<cr>")
 ***
 --bar
@@ -111,6 +122,13 @@ Every plugins is a lua table that returns the plugin details
 ```
 return {
   "someone/someplugin", -- pointing to the plugin repo
+  lazy = true, -- force lady laoding
+  event = "VimEnter", -- when to load plugin
+-- Or
+  keys = {} -- load plugin when these keys are pressed
+  dependencies = {
+"someoneelse/somethingelse", lazy = true, -- load these when starting someplugin
+}
   opts = {}, -- load plugin default settings
 --OR
   config = function() -- pass custom settings
