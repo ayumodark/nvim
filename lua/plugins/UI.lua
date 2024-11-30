@@ -51,14 +51,16 @@ return {
   },
   {
     "shaunsingh/nord.nvim",
-    lazy = false,
+    lazy = true,
+    event = "VimEnter",
     config = function()
       vim.cmd("colorscheme nord")
     end,
   },
   {
     "nvim-lualine/lualine.nvim",
-    lazy = false,
+    lazy = true,
+    event = "VeryLazy",
     dependencies = {
       "nvim-tree/nvim-web-devicons", lazy = true,
     },
@@ -72,7 +74,8 @@ return {
   },
   {
     "goolord/alpha-nvim",
-    lazy = false,
+    lazy = true,
+    event = "VimEnter",
     dependencies = {"nvim-tree/nvim-web-devicons", lazy = true},
     config = function()
       local startify = require("alpha.themes.startify")
