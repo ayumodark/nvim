@@ -115,19 +115,19 @@ vim.keymap.set("n", "<c-b>", ":bnext<cr>") -- swaps through every open buffer (c
 <details>
 <summary>Plugins</summary>
 
-Every plugins is a lua table that returns the plugin details
+Every plugin is a lua table that returns the plugin details
 
 ```
 return {
   "someone/someplugin", -- pointing to the plugin repo
-  lazy = true, -- force lazy laoding
+  lazy = true, -- force lazy loading
   event = "VimEnter", -- when to load plugin
 --OR
   keys = {}, -- load plugin when these keys are pressed
 --OR
   cmd = "somefeature", -- load plugin when this command is executed
 --OR
-  ft = "text", -- load plugin when working in a soecific filetype
+  ft = "text", -- load plugin when working in a specific filetype
   dependencies = {
 "someoneelse/somethingelse", lazy = true, -- load these when starting "someplugin"
 }
