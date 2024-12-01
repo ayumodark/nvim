@@ -146,16 +146,20 @@ The plugins used in this config:
 
 *FORMATTER*
 - none-ls
+- fidget
 
 *GIT*
+- gitsigns
 - mini-git
 - Neogit
+  - planery
+  - diffview
 
 *LSP*
 - Mason
+    - nvim-lspconfig
     - Mason-lspconfig
     - Mason-null-ls
-    - nvim-lspconfig
 
 *SNIPPETS*
 - nvim-cmp
@@ -174,7 +178,9 @@ The plugins used in this config:
 - indent-blankline
 - nord
 - lualine
+    - nvim-web-devicons
 - alpha
+    - nvim-web-devicons
 - nvim-treesitter
 
 *UX*
