@@ -29,6 +29,7 @@ This is the recommended file structure by lazy.nvim, every change in the `lua` d
 │       ├── FORMATTER.lua
 │       ├── GIT.lua
 │       ├── LSP.lua
+│       ├── SNIPPETS.lua
 │       ├── UI.lua
 │       └── UX.lua
 └── init.lua
