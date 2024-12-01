@@ -129,7 +129,7 @@ return {
 --OR
   ft = "text", -- load plugin when working in a specific filetype
   dependencies = {
-"someoneelse/somethingelse", lazy = true, -- load these when starting "someplugin"
+    "someoneelse/somethingelse", lazy = true, -- load these when starting "someplugin"
 }
   opts = {}, -- load plugin default settings
 --OR
