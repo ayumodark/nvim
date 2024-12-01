@@ -82,26 +82,20 @@ And declares vim settings before loading anything
 ```
 --foo
 ***
--- hotkey used for keybinds
-vim.g.mapleader = " "
+vim.g.mapleader = " " -- hotkey used for keybinds
 
--- enables true color for terminals
-vim.opt.termguicolors = true
+vim.opt.termguicolors = true -- enables true color for terminals
 
--- tabs spaces and width
+-- tab spaces and width
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
--- Default vim UI
-vim.g.background = "light"
+vim.g.background = "light" -- Default vim UI (select/highlight)
+vim.wo.number = true -- shows line number
 
--- shows line number
-vim.wo.number = true
-
--- disable swap file creation
-vim.opt.swapfile = false
+vim.opt.swapfile = false -- disable swap file creation
 
 -- naviagate panes with vim keybinds (ctrl+k)
 vim.keymap.set("n", "<c-k>", ":wincmd k<cr>")
@@ -109,8 +103,7 @@ vim.keymap.set("n", "<c-j>", ":wincmd j<cr>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
--- swaps through every open buffer (ctrl+b)
-vim.keymap.set("n", "<c-b>", ":bnext<cr>")
+vim.keymap.set("n", "<c-b>", ":bnext<cr>") -- swaps through every open buffer (ctrl+b)
 ***
 --bar
 ```
@@ -125,12 +118,14 @@ Every plugins is a lua table that returns the plugin details
 ```
 return {
   "someone/someplugin", -- pointing to the plugin repo
-  lazy = true, -- force lady laoding
+  lazy = true, -- force lazy laoding
   event = "VimEnter", -- when to load plugin
--- Or
-  keys = {} -- load plugin when these keys are pressed
+--OR
+  keys = {}, -- load plugin when these keys are pressed
+--OR
+  cmd = "somefeature", -- load plugin when this command is executed
   dependencies = {
-"someoneelse/somethingelse", lazy = true, -- load these when starting someplugin
+"someoneelse/somethingelse", lazy = true, -- load these when starting "someplugin"
 }
   opts = {}, -- load plugin default settings
 --OR
