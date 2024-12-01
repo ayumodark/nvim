@@ -126,6 +126,8 @@ return {
   keys = {}, -- load plugin when these keys are pressed
 --OR
   cmd = "somefeature", -- load plugin when this command is executed
+--OR
+  ft = "text", -- load plugin when working in a soecific filetype
   dependencies = {
 "someoneelse/somethingelse", lazy = true, -- load these when starting "someplugin"
 }
