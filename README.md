@@ -1,9 +1,10 @@
 # Images
+font: Caskaydia NF Mono
 - Dashboard
-    font: Casksydia NF Mono
-![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
+    ![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
 # Pre-Install
 - Install `neovim`
+- Install `nerdfont`, configure terminal to use `nerdfont`
 - Install `git`
 - Install `gcc`, or any other c compiler
 - Install `npm`
