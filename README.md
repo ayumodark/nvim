@@ -14,7 +14,8 @@ font: Caskaydia NF Mono
 ```
 cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
 ```
-<hr>
+
+# Config Details
 <details>
 <summary>File Structure </summary>
 
@@ -138,3 +139,42 @@ return {
   end, -- end config section
 }
 ```
+The plugins used in this config:
+*FORMATTER*
+- none-ls
+
+*GIT*
+- mini-git
+- Neogit
+
+*LSP*
+- Mason
+    - Mason-lspconfig
+    - Mason-null-ls
+    - nvim-lspconfig
+
+*SNIPPETS*
+- nvim-cmp
+    - cmp-nvim-lsp
+    - nvim-lspconfig
+    - luasnip
+        - cmp_luasnip
+        - friendly-snippet
+
+*UI*
+- mini.indentscope
+- mini.tabline
+- nvim-highlight-colors
+- noice
+    - nui
+- indent-blankline
+- nord
+- lualine
+- alpha
+- nvim-treesitter
+
+*UX*
+- mini.pick
+- mini.files
+- mini.pairs
+- markdown-preview
