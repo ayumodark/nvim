@@ -141,7 +141,9 @@ return {
   end, -- end config section
 }
 ```
+
 The plugins used in this config:
+
 *FORMATTER*
 - none-ls
 
