@@ -28,6 +28,9 @@ return {
     lazy = true,
     cmd = {"MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop"},
     build = "cd app && npm install",
-    opts = {},
+    init = function()
+      vim.g.mkdp_filetypes = {"markdown"}
+    end,
+    ft = {"markdown"},
   },
 }
