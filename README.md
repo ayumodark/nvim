@@ -12,7 +12,7 @@ font: Caskaydia NF Mono
 
 # Quick Install
 ```
-git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 ~/.config && rm -rf ~/.config/nvim/.git
+cd ~.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
 ```
 
 # Config Details
