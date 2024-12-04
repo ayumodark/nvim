@@ -2,6 +2,10 @@
 font: Caskaydia NF Mono
 - Dashboard
     ![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
+
+- Screenshot of `lua/config/lazy.lua`
+    ![img2](https://github.com/ayumodark/nvim/blob/images/screenshot2.png)
+
 # Pre-Install
 - Install `neovim`
 - Install `nerdfont`, configure terminal to use `nerdfont`
