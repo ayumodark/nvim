@@ -35,6 +35,9 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
 vim.keymap.set("n", "<c-b>", ":bnext<cr>")
 
+vim.keymap.set("n", "<c-w>", ":w!<cr>")
+vim.keymap.set("n", "<c-q>", ":q!<cr>")
+
 require("lazy").setup({
   spec = {
     { import = "plugins" },
