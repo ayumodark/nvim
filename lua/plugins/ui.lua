@@ -10,7 +10,7 @@ return {
   {
     "brenoprata10/nvim-highlight-colors",
     lazy = true,
-    event = {"BufNewFile", "BufRead", "InsertEnter"},
+    event = {"VimEnter", "InsertEnter"},
     config = function()
       require("nvim-highlight-colors").setup({
         render = "virtual",
