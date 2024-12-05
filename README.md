@@ -6,6 +6,8 @@ font: Caskaydia Cove NF Mono
 - Screenshot of `lua/config/lazy.lua`
     ![img2](https://github.com/ayumodark/nvim/blob/images/screenshot2.png)
 
+- Some CSS code
+    ![img2](https://github.com/ayumodark/nvim/blob/images/screenshot3.png)
 # Pre-Install
 - Install `neovim`
 - Install `nerdfont`, configure terminal to use `nerdfont`
