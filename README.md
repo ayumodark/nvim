@@ -1,5 +1,5 @@
 # Images
-font: Caskaydia NF Mono
+font: Caskaydia Cove NF Mono
 - Dashboard
     ![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
 
