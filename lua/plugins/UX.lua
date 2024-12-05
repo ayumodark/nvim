@@ -1,36 +1,27 @@
 return {
   {
-    "echasnovski/mini.pick",
+    "akinsho/toggleterm.nvim",
+    version = "*",
     lazy = true,
-    keys = {"<leader>p", ":Pick files<cr>"},
+    keys = {"<leader>t", ":ToggleTerm direction=float<cr>"},
     config = function()
-      require("mini.pick").setup()
-      vim.keymap.set("n", "<leader>p", ":Pick files<cr>")
+      require("toggleterm").setup()
+      vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<cr>")
     end,
   },
-  {
-    "echasnovski/mini.files",
-    lazy = true,
-    keys = {"<leader>f", ":lua MiniFiles.open()<cr>"},
-    config = function()
-      require("mini.files").setup()
-      vim.keymap.set("n", "<leader>f", ":lua MiniFiles.open()<cr>")
-    end,
-  },
-  {
-    "echasnovski/mini.pairs",
-    lazy = true,
-    event = "InsertEnter",
-    opts = {},
-  },
-  {
-    "iamcco/markdown-preview.nvim",
-    lazy = true,
-    cmd = {"MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop"},
-    build = "cd app && npm install",
-    init = function()
-      vim.g.mkdp_filetypes = {"markdown"}
-    end,
-    ft = {"markdown"},
-  },
+	{
+		"windwp/nvim-autopairs",
+		lazy = true,
+		event = "InsertEnter",
+		opts = {},
+	},
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = {"MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop"},
+		build = "cd app && npm install",
+		init = function()
+			vim.g.mkdp_filetypes = {"markdown"}
+		end,
+		ft = {"markdown"},
+	},
 }

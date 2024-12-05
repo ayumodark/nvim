@@ -24,8 +24,8 @@ return {
           documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
-          ["<c-j>"] = cmp.mapping.scroll_docs(-4),
-          ["<c-k>"] = cmp.mapping.scroll_docs(4),
+          ["<c-n>"] = cmp.mapping.scroll_docs(-4),
+          ["<c-p>"] = cmp.mapping.scroll_docs(4),
           ["<c-space>"] = cmp.mapping.complete(),
           ["<c-q>"] = cmp.mapping.abort(),
           ["<cr>"] = cmp.mapping.confirm({select = true}),

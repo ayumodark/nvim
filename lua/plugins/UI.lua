@@ -1,28 +1,29 @@
 return {
   {
-    "echasnovski/mini.indentscope",
-    lazy = true,
-    event = "InsertEnter",
-    opts = {},
-  },
-  {
-    "echasnovski/mini.tabline",
+    "akinsho/bufferline.nvim",
+    version = "*",
+    dependencies = {"nvim-tree/nvim-web-devicons", lazy = true},
     lazy = true,
     event = {"BufNewFile", "BufRead", "InsertEnter"},
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
+    lazy = true,
     event = {"BufNewFile", "BufRead", "InsertEnter"},
-    opts = {},
+    config = function()
+      require("nvim-highlight-colors").setup({
+        render = "virtual",
+        virtual_symbol = "  ",
+        virtual_symbol_position = "eow",
+      })
+    end,
   }, 
   {
     "folke/noice.nvim",
     lazy = true,
     event = {"BufNewFile", "BufRead", "VimEnter"},
-    dependencies = {
-      "MunifTanjim/nui.nvim", lazy = true,
-    },
+    dependencies = {"MunifTanjim/nui.nvim", lazy = true},
     config = function()
       require("noice").setup({
         lsp = {
@@ -61,9 +62,7 @@ return {
     "nvim-lualine/lualine.nvim",
     lazy = true,
     event = "VeryLazy",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons", lazy = true,
-    },
+    dependencies = {"nvim-tree/nvim-web-devicons", lazy = true},
     config = function()
       require("lualine").setup({
         options = {
