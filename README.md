@@ -29,14 +29,15 @@ This is the recommended file structure by lazy.nvim, every change in the `lua` d
 ~/.config/nvim
 ├── lua
 │   ├── config
-│   │   └── lazy.lua
-│   └── plugins
-│       ├── FORMATTER.lua
-│       ├── GIT.lua
-│       ├── LSP.lua
-│       ├── SNIPPETS.lua
-│       ├── UI.lua
-│       └── UX.lua
+│   │   └── lazy.lua    
+│   ├── plugins
+│   │   ├── formatter.lua
+│   │   ├── git.lua
+│   │   ├── lsp.lua
+│   │   ├── snippets.lua
+│   │   ├── ui.lua
+│   │   └── ux.lua
+│   └── vim-settings.lua
 └── init.lua
 ```
 <details>
