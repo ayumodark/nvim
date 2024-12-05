@@ -71,9 +71,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
---foo
-***
---bar
+require("vim-settings")
 
 require("lazy").setup({ -- load lazy default settings
   spec = {
@@ -84,11 +82,9 @@ require("lazy").setup({ -- load lazy default settings
 })
 ```
 
-And declares vim settings before loading anything
+And calls vim-sttings, where all vim keykinds and options are declared
 
 ```
---foo
-***
 vim.g.mapleader = " " -- hotkey used for keybinds
 
 vim.opt.termguicolors = true -- enables true color for terminals
@@ -111,8 +107,9 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
 vim.keymap.set("n", "<c-b>", ":bnext<cr>") -- swaps through every open buffer (ctrl+b)
-***
---bar
+
+vim.keymap.set("n", "<c-w>", ":w!<cr>")
+vim.keymap.set("n", "<c-q>", ":q!<cr>")
 ```
 </details>
 </details>
@@ -155,7 +152,7 @@ The plugins used in this config:
 
 *GIT*
 - gitsigns
-- mini-git
+- toggleterm
 - Neogit
   - planery
   - diffview
@@ -175,8 +172,7 @@ The plugins used in this config:
         - friendly-snippet
 
 *UI*
-- mini.indentscope
-- mini.tabline
+- bufferline
 - nvim-highlight-colors
 - noice
     - nui
@@ -189,7 +185,6 @@ The plugins used in this config:
 - nvim-treesitter
 
 *UX*
-- mini.pick
-- mini.files
-- mini.pairs
+- toggleterm
+- nvim-autopairs
 - markdown-preview
