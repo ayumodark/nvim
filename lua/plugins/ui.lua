@@ -4,25 +4,23 @@ return {
     version = "*",
     dependencies = {"nvim-tree/nvim-web-devicons", lazy = true},
     lazy = true,
-    event = {"BufNewFile", "BufRead", "InsertEnter"},
+    event = "VeryLazy",
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
     lazy = true,
-    event = {"VimEnter", "InsertEnter"},
+    event = "VeryLazy",
     config = function()
       require("nvim-highlight-colors").setup({
-        render = "virtual",
-        virtual_symbol = "  ",
-        virtual_symbol_position = "eow",
-      })
+        render = "foreground",
+     })
     end,
   }, 
   {
     "folke/noice.nvim",
     lazy = true,
-    event = {"BufNewFile", "BufRead", "VimEnter"},
+    event = "VeryLazy",
     dependencies = {"MunifTanjim/nui.nvim", lazy = true},
     config = function()
       require("noice").setup({
