@@ -1,16 +1,16 @@
 # Images
 font: Caskaydia Cove NF Mono
-- Dashboard
+- Dashboard using `alpha`
 
-    ![img1](https://github.com/ayumodark/nvim/blob/images/screenshot.png)
+    ![dashboard](https://github.com/ayumodark/nvim/blob/images/dashboard.png)
 
 - Screenshot of `lua/config/lazy.lua`
 
-    ![img2](https://github.com/ayumodark/nvim/blob/images/screenshot2.png)
+    ![lazy.lua](https://github.com/ayumodark/nvim/blob/images/lazy.lua.png)
 
 - Some CSS code
 
-    ![img2](https://github.com/ayumodark/nvim/blob/images/screenshot3.png)
+    ![css](https://github.com/ayumodark/nvim/blob/images/css.png)
 
 # Pre-Install
 - Install `neovim`
