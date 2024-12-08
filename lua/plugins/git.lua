@@ -10,8 +10,8 @@ return {
     lazy = true,
     keys = {"<leader>gb", ":Neogit cwd=%:p:h kind=floating<cr>"},
     dependencies = {
-      "nvim-lua/plenary.nvim", lazy = true,
-      "sindrets/diffview.nvim", lazy = true,
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
     },
     config = function()
       require("neogit").setup()

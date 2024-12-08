@@ -1,8 +1,8 @@
 return {
   "nvimtools/none-ls.nvim",
   lazy = true,
-  event = "VeryLazy",
-  dependencies = {"j-hui/fidget.nvim", lazy = true},
+  keys = {"<leader>r", ":lua vim.lsp.buf.format()<cr>"},
+  dependencies = {"j-hui/fidget.nvim"},
   config = function()
     local null_ls = require("null-ls")
     null_ls.setup({

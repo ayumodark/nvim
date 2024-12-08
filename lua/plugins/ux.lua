@@ -12,11 +12,12 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		lazy = true,
-		event = "InsertEnter",
+    event = "InsertEnter",
 		opts = {},
 	},
 	{
 		"iamcco/markdown-preview.nvim",
+    lazy = true,
 		cmd = {"MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop"},
 		build = "cd app && npm install",
 		init = function()
