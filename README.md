@@ -4,11 +4,11 @@ font: Caskaydia Cove NF Mono
 
     ![dashboard](https://github.com/ayumodark/nvim/blob/images/dashboard.png)
 
-- Screenshot of `lua/config/lazy.lua`
+- `lua/config/lazy.lua` highlighting by `treesitter`
 
     ![lazy.lua](https://github.com/ayumodark/nvim/blob/images/lazy.lua.png)
 
-- Some CSS code
+- Color highlighting by `nvim-highlight-color`
 
     ![css](https://github.com/ayumodark/nvim/blob/images/css.png)
 
@@ -88,7 +88,7 @@ require("lazy").setup({ -- load lazy default settings
 })
 ```
 
-And calls vim-sttings, where all vim keykinds and options are declared
+And calls `lua/vim-settings`, where all vim keykinds and options are declared
 
 ```
 vim.g.mapleader = " " -- hotkey used for keybinds
@@ -114,6 +114,7 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
 vim.keymap.set("n", "<c-b>", ":bnext<cr>") -- swaps through every open buffer (ctrl+b)
 
+-- quickly write and quit
 vim.keymap.set("n", "<c-w>", ":w!<cr>")
 vim.keymap.set("n", "<c-q>", ":q!<cr>")
 ```
