@@ -4,11 +4,11 @@ font: Caskaydia Cove NF Mono
 
     ![dashboard](https://github.com/ayumodark/nvim/blob/images/dashboard.png)
 
-- `lua/config/lazy.lua` highlighting by `treesitter`
+- highlighting by `treesitter`
 
     ![lazy.lua](https://github.com/ayumodark/nvim/blob/images/lazy.lua.png)
 
-- Color highlighting by `nvim-highlight-color`
+- color highlighting by `nvim-highlight-color`
 
     ![css](https://github.com/ayumodark/nvim/blob/images/css.png)
 
