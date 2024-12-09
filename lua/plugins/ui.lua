@@ -3,14 +3,14 @@ return {
     "akinsho/bufferline.nvim",
     version = "*",
     lazy = true,
-    event = "BufRead",
+    event = {"BufRead", "BufReadPost"},
     dependencies = {"nvim-tree/nvim-web-devicons"},
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
     lazy = true,
-    event = "BufRead",
+    event = {"BufRead", "BufReadPost"},
     config = function()
       require("nvim-highlight-colors").setup({
         render = "foreground",
@@ -20,7 +20,7 @@ return {
   {
     "folke/noice.nvim",
     lazy = true,
-    event = "VeryLazy",
+    event = {"VeryLazy"},
     dependencies = {"MunifTanjim/nui.nvim"},
     config = function()
       require("noice").setup({
@@ -44,7 +44,7 @@ return {
   {
     "lukas-reineke/indent-blankline.nvim",
     lazy = true,
-    event = "BufRead",
+    event = {"BufRead", "BufReadPost"},
     main = "ibl",
     opts = {},
   },
@@ -58,7 +58,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     lazy = true,
-    event = "VeryLazy",
+    event = {"VeryLazy"},
     dependencies = {"nvim-tree/nvim-web-devicons"},
     config = function()
       require("lualine").setup({
@@ -71,7 +71,7 @@ return {
   {
     "goolord/alpha-nvim",
     lazy = true,
-    event = "VimEnter",
+    event = {"VimEnter"},
     dependencies = {"nvim-tree/nvim-web-devicons"},
     config = function()
       local startify = require("alpha.themes.startify")
@@ -94,7 +94,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = true,
-    event = "BufRead",
+    event = {"BufRead", "BufReadPost"},
     build = ":TSUpdate",
     config = function()
       local config = require("nvim-treesitter.configs")

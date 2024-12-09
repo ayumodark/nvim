@@ -9,10 +9,25 @@ return {
       vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<cr>")
     end,
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    lazy = true,
+    keys = {"<leader>f", ":Neotree current %:p:h:h %:p position left<cr>"}
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+      "3rd/image.nvim",
+    }
+    config = function()
+      vim.keymap.set("n", "<leader>f", ":Neotree current %:p:h:h %:p position left<cr>")
+    end,
+  },
 	{
 		"windwp/nvim-autopairs",
 		lazy = true,
-    event = "InsertEnter",
+    event = {"InsertEnter"},
 		opts = {},
 	},
 	{
