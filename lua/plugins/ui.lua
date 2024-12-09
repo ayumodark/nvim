@@ -50,8 +50,7 @@ return {
   },
   {
     "shaunsingh/nord.nvim",
-    lazy = true,
-    event = "VimEnter",
+    lazy = false,
     config = function()
       vim.cmd("colorscheme nord")
     end,
