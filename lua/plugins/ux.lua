@@ -13,13 +13,13 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     lazy = true,
-    keys = {"<leader>f", ":Neotree reveal filesystem right<cr>"}
+    keys = {"<leader>f", ":Neotree reveal filesystem right<cr>"},
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
       "3rd/image.nvim",
-    }
+    },
     config = function()
       vim.keymap.set("n", "<leader>f", ":Neotree reveal filesystem right<cr>")
     end,
