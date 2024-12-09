@@ -102,10 +102,8 @@ The plugins used in this config:
 
 *UX*
 - toggleterm
-- neotree
-    - planery
+- nvim-tree
     - nvim-web-devicons
-    - nui
 - oil
     - nvim-web-devicons
 - nvim-autopairs
