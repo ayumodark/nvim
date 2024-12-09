@@ -20,12 +20,12 @@ font: Caskaydia Cove NF Mono
 - Install `npm`
 - Install `nodejs`
 
-# 🛠️ Quick Install
+# 🚀 Quick Install
 ```
 cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
 ```
 
-# 🪛 Config Details
+# 🛠️ Config Details
 <details>
 <summary>File Structure </summary>
 
