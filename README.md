@@ -106,5 +106,7 @@ The plugins used in this config:
     - planery
     - nvim-web-devicons
     - nui
+- oil
+    - nvim-web-devicons
 - nvim-autopairs
 - markdown-preview
