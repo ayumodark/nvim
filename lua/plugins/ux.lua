@@ -10,17 +10,18 @@ return {
     end,
   },
   {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
     lazy = true,
-    keys = {"<leader>f", ":Neotree toggle reveal filesystem right<cr>"},
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim",
-    },
+    keys = {"<leader>f", ":NvimTreeToggle<cr>"},
+    dependencies = {"nvim-tree/nvim-web-devicons"},
     config = function()
-      vim.keymap.set("n", "<leader>f", ":Neotree toggle reveal filesystem right<cr>")
+      require("nvim-tree").setup({
+        view = {
+          side = "right",
+        },
+      })
+      vim.keymap.set("n", "<leader>f", ":NvimTreeToggle<cr>")
     end,
   },
   {
