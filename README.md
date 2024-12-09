@@ -64,31 +64,31 @@ The plugins used in this config:
 
 *FORMATTER*
 - none-ls
-- fidget
+    - fidget
 
 *GIT*
 - gitsigns
-- toggleterm
 - Neogit
   - planery
   - diffview
 
 *LSP*
-- Mason
+- mason
     - nvim-lspconfig
-    - Mason-lspconfig
-    - Mason-null-ls
+    - mason-lspconfig
+    - ,ason-null-ls
 
 *SNIPPETS*
 - nvim-cmp
     - cmp-nvim-lsp
     - nvim-lspconfig
-    - luasnip
+    - LuaSnip
         - cmp_luasnip
-        - friendly-snippet
+        - friendly-snippets
 
 *UI*
 - bufferline
+    - nvim-web-devicons
 - nvim-highlight-colors
 - noice
     - nui
@@ -102,5 +102,9 @@ The plugins used in this config:
 
 *UX*
 - toggleterm
+- neotree
+    - planery
+    - nvim-web-devicons
+    - nui
 - nvim-autopairs
 - markdown-preview
