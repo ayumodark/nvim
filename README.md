@@ -1,4 +1,4 @@
-# 📷 Images
+# ✨ Images
 font: Caskaydia Cove NF Mono
 - Dashboard using `alpha`
 
