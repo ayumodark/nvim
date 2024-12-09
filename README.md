@@ -31,7 +31,7 @@ cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark
 
 This is the recommended file structure by lazy.nvim, every change in the `lua` directory is dynamically loaded 
 
-    ![eza-filetree](https://github.com/ayumodark/nvim/blob/images/eza-filetree.png)
+<img src="https://github.com/ayumodark/nvim/blob/images/eza-filetree.png" alt="exa-filetree">
 
 <details>
 <summary><code>init.lua</code></summary>
@@ -46,7 +46,7 @@ calls lazy.nvim settings in `lua/config/lazy.lua` it simply contains
 
 Installs lazy.nvim
 
-  ![lazy.lua-comments](https://github.com/ayumodark/nvim/blob/images/lazy.lua-comments.png)
+<img src="https://github.com/ayumodark/nvim/blob/images/lazy.lua-comments.png" alt="lazy.lua-comments">
 
 And calls `lua/vim-settings`, where all vim keykinds and options are declared
 
@@ -58,7 +58,7 @@ And calls `lua/vim-settings`, where all vim keykinds and options are declared
 
 Every plugin is a lua table that returns the plugin details
 
-    ![plugindetails](https://github.com/ayumodark/nvim/blob/images/plugindetails.png)
+<img src="https://github.com/ayumodark/nvim/blob/images/plugindetails.png" alt="plugindetails">
 
 The plugins used in this config:
 
