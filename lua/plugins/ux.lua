@@ -13,7 +13,7 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     lazy = true,
-    keys = {"<leader>f", ":Neotree current %:p:h:h %:p position left<cr>"}
+    keys = {"<leader>f", ":Neotree reveal filesystem right<cr>"}
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
@@ -21,7 +21,7 @@ return {
       "3rd/image.nvim",
     }
     config = function()
-      vim.keymap.set("n", "<leader>f", ":Neotree current %:p:h:h %:p position left<cr>")
+      vim.keymap.set("n", "<leader>f", ":Neotree reveal filesystem right<cr>")
     end,
   },
 	{
