@@ -10,7 +10,7 @@ font: Caskaydia Cove NF Mono
 
 - color highlighting by `nvim-highlight-color`
 
-    ![css](https://github.com/ayumodark/nvim/blob/images/css.png)
+    ![color-highlight](https://github.com/ayumodark/nvim/blob/images/color-highlight.png)
 
 # ⚙️  Requirements
 - Install `neovim`
