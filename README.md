@@ -1,4 +1,4 @@
-# Images
+# 📷 Images
 font: Caskaydia Cove NF Mono
 - Dashboard using `alpha`
 
@@ -12,7 +12,7 @@ font: Caskaydia Cove NF Mono
 
     ![css](https://github.com/ayumodark/nvim/blob/images/css.png)
 
-# Requirements
+# ⚙️  Requirements
 - Install `neovim`
 - Install `nerdfont`, configure terminal to use `nerdfont`
 - Install `git`
@@ -20,12 +20,12 @@ font: Caskaydia Cove NF Mono
 - Install `npm`
 - Install `nodejs`
 
-# Quick Install
+# 🛠️ Quick Install
 ```
 cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
 ```
 
-# Config Details
+# 🪛 Config Details
 <details>
 <summary>File Structure </summary>
 
