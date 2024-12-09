@@ -16,6 +16,11 @@ return {
 		end,
 	},
   {
+    "neovim/nvim-lspconfig",
+    lazy = true,
+    event = "InsertEnter",
+  },
+  {
     "williamboman/mason-lspconfig.nvim",
     lazy = true,
     event = "InsertEnter",
