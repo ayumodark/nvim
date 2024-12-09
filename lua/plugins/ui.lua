@@ -3,14 +3,14 @@ return {
     "akinsho/bufferline.nvim",
     version = "*",
     lazy = true,
-    event = {"BufRead", "BufReadPost"},
+    event = {"BufRead", "BufReadPost", "BufNewFile"},
     dependencies = {"nvim-tree/nvim-web-devicons"},
     opts = {},
   },
   {
     "brenoprata10/nvim-highlight-colors",
     lazy = true,
-    event = {"BufRead", "BufReadPost"},
+    event = {"BufRead", "BufReadPost", "BufNewFile"},
     config = function()
       require("nvim-highlight-colors").setup({
         render = "foreground",
@@ -44,7 +44,7 @@ return {
   {
     "lukas-reineke/indent-blankline.nvim",
     lazy = true,
-    event = {"BufRead", "BufReadPost"},
+    event = {"BufRead", "BufReadPost", "BufNewFile"},
     main = "ibl",
     opts = {},
   },
@@ -94,7 +94,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = true,
-    event = {"BufRead", "BufReadPost"},
+    event = {"BufRead", "BufReadPost", "BufNewFile"},
     build = ":TSUpdate",
     config = function()
       local config = require("nvim-treesitter.configs")
