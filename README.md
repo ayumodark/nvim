@@ -31,21 +31,8 @@ cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark
 
 This is the recommended file structure by lazy.nvim, every change in the `lua` directory is dynamically loaded 
 
-```
-~/.config/nvim
-├── lua
-│   ├── config
-│   │   └── lazy.lua    
-│   ├── plugins
-│   │   ├── formatter.lua
-│   │   ├── git.lua
-│   │   ├── lsp.lua
-│   │   ├── snippets.lua
-│   │   ├── ui.lua
-│   │   └── ux.lua
-│   └── vim-settings.lua
-└── init.lua
-```
+    ![eza-filetree](https://github.com/ayumodark/nvim/blob/images/eza-filetree.png)
+
 <details>
 <summary><code>init.lua</code></summary>
 
