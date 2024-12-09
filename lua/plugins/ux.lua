@@ -23,6 +23,16 @@ return {
       vim.keymap.set("n", "<leader>f", ":Neotree toggle reveal filesystem right<cr>")
     end,
   },
+  {
+    "stevearc/oil.nvim",
+    lazy = true,
+    keys = {"-", ":Oil --float<cr>"},
+    dependencies = {"nvim-tree/nvim-web-devicons"},
+    config = function()
+      require("oil").setup()
+      vim.keymap.set("n", "-", ":Oil --float<cr>")
+    end,
+  },
 	{
 		"windwp/nvim-autopairs",
 		lazy = true,
