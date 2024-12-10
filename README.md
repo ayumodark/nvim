@@ -22,7 +22,7 @@ font: Caskaydia Cove NF Mono
 
 # 🚀 Quick Install
 ```
-cd ~/.config && git clone -b config --single-branch https://github.com/ayumodark/nvim --depth=1 && rm -rf nvim/.git
+mkdir -p ~/.config && cd ~/.config && git clone -b config --single-branch --depth=1 https://github.com/ayumodark/nvim && rm -rf nvim/.git
 ```
 
 # 🛠️ Config Details
