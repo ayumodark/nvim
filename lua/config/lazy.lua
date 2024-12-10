@@ -22,4 +22,14 @@ require("lazy").setup({
   },
   install = {colorscheme = {"nord"}},
   checker = {enabled = true}, 
+  rtp = {
+    disabled_plugins = {
+        "gzip",
+        "netrwPlugin",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
+    },
 })
