@@ -16,8 +16,12 @@ vim.keymap.set("n", "<c-k>", ":wincmd k<cr>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<cr>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
-
 vim.keymap.set("n", "<leader>b", ":bnext<cr>")
+
+vim.keymap.set("i", "<c-k>", "<Up>")
+vim.keymap.set("i", "<c-j>", "<Down>")
+vim.keymap.set("i", "<c-h>", "<Left>")
+vim.keymap.set("i", "<c-l>", "<Right>")
 
 vim.keymap.set("n", "<c-w>", ":w<cr>")
 vim.keymap.set("n", "<c-q>", ":q<cr>")
