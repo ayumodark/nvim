@@ -50,11 +50,13 @@ Installs lazy.nvim
 
 And calls `lua/vim-settings`, where all vim keykinds and options are declared
 
+<img src="https://github.com/ayumodark/nvim/blob/images/vim-settings.lua-comments.png" alt="vim-settings.lua-comments">
+
 </details>
 </details>
 
 <details>
-<summary> 🔨  Plugins</summary>
+<summary> 🔌 Plugins</summary>
 
 Every plugin is a lua table that returns the plugin details
 
