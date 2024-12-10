@@ -65,16 +65,16 @@ return {
         options = {
           theme = "nord",
         },
-          sections = {
-            lualine_x = {
-              {
-                require("lazy.status").updates,
-                cond = require("lazy.status").has_updates,
-                color = {fg = "#D08770"},
-              },
+        sections = {
+          lualine_x = {
+            {
+              require("lazy.status").updates,
+              cond = require("lazy.status").has_updates,
+              color = {fg = "#D08770"},
             },
           },
-        })
+        },
+      })
     end,
   },
   {
