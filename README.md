@@ -27,14 +27,14 @@ mkdir -p ~/.config && cd ~/.config && git clone -b config --single-branch --dept
 
 # 🛠️ Config Details
 <details>
-<summary>File Structure </summary>
+<summary> 📂 File Structure </summary>
 
 This is the recommended file structure by lazy.nvim, every change in the `lua` directory is dynamically loaded 
 
 <img src="https://github.com/ayumodark/nvim/blob/images/eza-filetree.png" alt="exa-filetree">
 
 <details>
-<summary><code>init.lua</code></summary>
+<summary><code> 🔧 init.lua</code></summary>
 
 calls lazy.nvim settings in `lua/config/lazy.lua` it simply contains
 
@@ -42,7 +42,7 @@ calls lazy.nvim settings in `lua/config/lazy.lua` it simply contains
 </details>
 
 <details>
-<summary><code>lua/config/lazy.lua</code></summary>
+<summary><code> 💤 lua/config/lazy.lua</code></summary>
 
 Installs lazy.nvim
 
@@ -54,7 +54,7 @@ And calls `lua/vim-settings`, where all vim keykinds and options are declared
 </details>
 
 <details>
-<summary>Plugins</summary>
+<summary> 🔨  Plugins</summary>
 
 Every plugin is a lua table that returns the plugin details
 
