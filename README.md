@@ -62,23 +62,23 @@ Every plugin is a lua table that returns the plugin details
 
 The plugins used in this config:
 
-*FORMATTER*
+📜 *FORMATTER*
 - none-ls
     - fidget
 
-*GIT*
+🔀 *GIT*
 - gitsigns
 - Neogit
   - planery
   - diffview
 
-*LSP*
+🤖 *LSP*
 - mason
     - nvim-lspconfig
     - mason-lspconfig
     - ,ason-null-ls
 
-*SNIPPETS*
+🖊️ *SNIPPETS*
 - nvim-cmp
     - cmp-nvim-lsp
     - nvim-lspconfig
@@ -86,7 +86,7 @@ The plugins used in this config:
         - cmp_luasnip
         - friendly-snippets
 
-*UI*
+🌟 *UI*
 - bufferline
     - nvim-web-devicons
 - nvim-highlight-colors
@@ -100,7 +100,7 @@ The plugins used in this config:
     - nvim-web-devicons
 - nvim-treesitter
 
-*UX*
+🪛 *UX*
 - toggleterm
 - nvim-tree
     - nvim-web-devicons
