@@ -52,8 +52,10 @@ calls lazy settings in `lua/config/lazy.lua` it simply contains `require("config
 <details>
 <summary><code> 💤 lua/config/lazy.lua</code></summary>
 Installs lazy.nvim
+
 <img src="https://github.com/ayumodark/nvim/blob/images/lazy.lua-explained.png" alt="lazy.lua-explained">
 And calls `lua/config/settings.lua`, where all vim keykinds and options are declared
+
 <img src="https://github.com/ayumodark/nvim/blob/images/settings.lua-explained.png" alt="settings.lua-explained">
 </details>
 </details>
