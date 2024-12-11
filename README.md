@@ -70,8 +70,8 @@ Every plugin is a lua table that returns the plugin details
 
 <img src="https://github.com/ayumodark/nvim/blob/images/plugindetails.png" alt="plugindetails">
 
-
 The plugins used in this config:
+
 📜 *FORMATTER*
 - none-ls
     - fidget
