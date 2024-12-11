@@ -54,6 +54,7 @@ calls lazy settings in `lua/config/lazy.lua` it simply contains `require("config
 Installs lazy.nvim
 
 <img src="https://github.com/ayumodark/nvim/blob/images/lazy.lua-explained.png" alt="lazy.lua-explained">
+
 And calls `lua/config/settings.lua`, where all vim keykinds and options are declared
 
 <img src="https://github.com/ayumodark/nvim/blob/images/settings.lua-explained.png" alt="settings.lua-explained">
@@ -62,7 +63,9 @@ And calls `lua/config/settings.lua`, where all vim keykinds and options are decl
 <details>
 <summary> 🔌 Plugins</summary>
 Every plugin is a lua table that returns the plugin details
+
 <img src="https://github.com/ayumodark/nvim/blob/images/plugindetails.png" alt="plugindetails">
+
 The plugins used in this config:
 📜 *FORMATTER*
 - none-ls
