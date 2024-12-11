@@ -22,7 +22,7 @@ font: Caskaydia Cove NF Mono
 
 # 🚀 Quick Install
 ```
-git clone -b config --single-branch --depth=1 https://github.com/ayumodark/nvim $XDG_DATA_HOME/nvim && rm -rf $XDG_DATA_HOME/nvim/.git
+git clone -b config --single-branch --depth=1 https://github.com/ayumodark/nvim ~/.config/nvim && rm -rf ~/.config/nvim/.git
 ```
 
 # 🛠️ Config Details
@@ -46,11 +46,11 @@ calls lazy.nvim settings in `lua/config/lazy.lua` it simply contains
 
 Installs lazy.nvim
 
-<img src="https://github.com/ayumodark/nvim/blob/images/lazy.lua-comments.png" alt="lazy.lua-comments">
+<img src="https://github.com/ayumodark/nvim/blob/images/lazy.lua-explained.png" alt="lazy.lua-explained">
 
-And calls `lua/vim-settings`, where all vim keykinds and options are declared
+And calls `lua/config/settings.lua`, where all vim keykinds and options are declared
 
-<img src="https://github.com/ayumodark/nvim/blob/images/vim-settings.lua-comments.png" alt="vim-settings.lua-comments">
+<img src="https://github.com/ayumodark/nvim/blob/images/settings.lua-explained.png" alt="settings.lua-explained">
 
 </details>
 </details>
@@ -78,7 +78,7 @@ The plugins used in this config:
 - mason
     - nvim-lspconfig
     - mason-lspconfig
-    - ,ason-null-ls
+    - mason-null-ls
 
 🖊️ *SNIPPETS*
 - nvim-cmp
@@ -98,15 +98,13 @@ The plugins used in this config:
 - nord
 - lualine
     - nvim-web-devicons
-- alpha
+- dashboard-nvim
     - nvim-web-devicons
 - nvim-treesitter
 
 🪛 *UX*
-- toggleterm
 - nvim-tree
     - nvim-web-devicons
 - oil
     - nvim-web-devicons
 - nvim-autopairs
-- markdown-preview
