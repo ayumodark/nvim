@@ -2,7 +2,7 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
-		event = "VeryLazy",
+		keys = { "<leader>f", "<cmd>NvimTreeToggle<cr>" },
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			require("nvim-tree").setup({
@@ -15,7 +15,7 @@ return {
 	},
 	{
 		"stevearc/oil.nvim",
-		event = "VeryLazy",
+		keys = { "-", "<cmd>Oil --float<cr>" },
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			require("oil").setup()
@@ -24,7 +24,7 @@ return {
 	},
 	{
 		"windwp/nvim-autopairs",
-		event = "VeryLazy",
+		event = "InsertEnter",
 		config = true,
 	},
 }

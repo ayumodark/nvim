@@ -8,7 +8,7 @@ return {
 	},
 	{
 		"brenoprata10/nvim-highlight-colors",
-		event = "VeryLazy",
+		event = { "BufRead", "BufReadPost", "BufNewFile" },
 		opts = {
 			render = "foreground",
 		},
@@ -80,7 +80,7 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
-		event = "VeryLazy",
+		event = { "BufRead", "BufReadPost", "BufNewFile" },
 		build = ":TSUpdate",
 		config = function()
 			local config = require("nvim-treesitter.configs")

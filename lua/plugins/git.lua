@@ -8,14 +8,14 @@ return {
 	{
 		"NeogitOrg/neogit",
 		lazy = true,
-		event = "VeryLazy",
+		keys = { "<leader>gb", "<cmd>Neogit cwd=%:p:h kind=floating<cr>" },
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",
 		},
 		config = function()
 			require("neogit").setup()
-			vim.keymap.set("n", "<leader>gb", ":Neogit cwd=%:p:h kind=floating<cr>")
+			vim.keymap.set("n", "<leader>gb", "<cmd>Neogit cwd=%:p:h kind=floating<cr>")
 		end,
 	},
 }
