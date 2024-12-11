@@ -22,7 +22,7 @@ require("lazy").setup({
   },
   install = {colorscheme = {"nord"}},
   checker = {enabled = true}, 
-  performance
+  performance = {
     rtp = {
       disabled_plugins = {
           "gzip",
@@ -33,4 +33,5 @@ require("lazy").setup({
           "zipPlugin",
       },
     },
+  },
 })
