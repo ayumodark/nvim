@@ -1,6 +1,6 @@
 # Description
 
-This is my personal neovim config with all the basics and fast startup time (~0.03 seconds),
+This is my neovim config with all the basics and fast startup time (~0.03 seconds),
 
 feel free to fork and customize to your needs
 
