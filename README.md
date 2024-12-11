@@ -1,28 +1,28 @@
 # ✨ Images
 font: Caskaydia Cove NF Mono
-- Dashboard using `alpha`
+- Dashboard
 
     ![dashboard](https://github.com/ayumodark/nvim/blob/images/dashboard.png)
 
-- highlighting by `treesitter`
+- highlighting
 
     ![lazy.lua](https://github.com/ayumodark/nvim/blob/images/lazy.lua.png)
 
-- color highlighting by `nvim-highlight-color`
+- color highlighting
 
     ![color-highlight](https://github.com/ayumodark/nvim/blob/images/color-highlight.png)
 
 # ⚙️  Requirements
-- Install `neovim`
-- Install `nerdfont`, configure terminal to use `nerdfont`
-- Install `git`
-- Install `gcc`, or any other c compiler
-- Install `npm`
-- Install `nodejs`
+- Install [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- Install [nerdfont](https://www.nerdfonts.com/font-downloads)
+    - Configure terminal to use `nerdfont`
+- Install [git](https://git-scm.com/downloads)
+- Install any C compiler
+- Install [node-js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 # 🚀 Quick Install
 ```
-mkdir -p ~/.config && cd ~/.config && git clone -b config --single-branch --depth=1 https://github.com/ayumodark/nvim && rm -rf nvim/.git
+git clone -b config --single-branch --depth=1 https://github.com/ayumodark/nvim $XDG_DATA_HOME/nvim && rm -rf $XDG_DATA_HOME/nvim/.git
 ```
 
 # 🛠️ Config Details
