@@ -47,7 +47,7 @@ This is the recommended file structure by lazy.nvim, every change in the `lua` d
 <img src="https://github.com/ayumodark/nvim/blob/images/eza-filetree.png" alt="eza-filetree">
 <details>
 <summary><code> 🔧 init.lua</code></summary>
-calls lazy settings in `lua/config/lazy.lua` it simply contains `require("config.lazy")`
+calls lazy settings in <code>lua/config/lazy.lua`</code> it simply contains <code>require("config.lazy")</code>
 </details>
 <details>
 <summary><code> 💤 lua/config/lazy.lua</code></summary>
