@@ -72,6 +72,7 @@ Every plugin is a lua table that returns the plugin details
 
 The plugins used in this config:
 
+
 📜 *FORMATTER*
 - none-ls
     - fidget
