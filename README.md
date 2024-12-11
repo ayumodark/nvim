@@ -45,6 +45,7 @@ This config is managed using [lazy](https://lazy.folke.io/)
 This is the recommended file structure by lazy.nvim, every change in the `lua` directory is dynamically loaded
 
 <img src="https://github.com/ayumodark/nvim/blob/images/eza-filetree.png" alt="eza-filetree">
+
 <details>
 <summary><code> 🔧 init.lua</code></summary>
 calls lazy settings in <code>lua/config/lazy.lua</code> it simply contains <code>require("config.lazy")</code>
@@ -59,6 +60,7 @@ Installs lazy.nvim
 And calls `lua/config/settings.lua`, where all vim keykinds and options are declared
 
 <img src="https://github.com/ayumodark/nvim/blob/images/settings.lua-explained.png" alt="settings.lua-explained">
+
 </details>
 </details>
 <details>
@@ -67,6 +69,7 @@ Every plugin is a lua table that returns the plugin details
 
 
 <img src="https://github.com/ayumodark/nvim/blob/images/plugindetails.png" alt="plugindetails">
+
 
 The plugins used in this config:
 📜 *FORMATTER*
