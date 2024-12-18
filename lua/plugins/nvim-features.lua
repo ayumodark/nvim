@@ -120,13 +120,10 @@ return {
 				table.insert(newVirtText, { suffix, "MoreMsg" })
 				return newVirtText
 			end
-			local capabilities = vim.lsp.protocol.make_client_capabilities()
-			capabilities.textDocument.foldingRange = {
-				dynamicRegistration = false,
-				lineFoldingOnly = true,
-			}
-			local language_servers = require("lspconfig").util.available_servers()
 			require("ufo").setup({
+				provider_selector = function(bufnr, filetype, buftype)
+					return { "treesitter", "indent" }
+				end,
 				open_fold_hl_timeout = 0,
 				fold_virt_text_handler = handler,
 			})
