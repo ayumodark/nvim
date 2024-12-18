@@ -120,12 +120,15 @@ return {
 				table.insert(newVirtText, { suffix, "MoreMsg" })
 				return newVirtText
 			end
+			local capabilities = vim.lsp.protocol.make_client_capabilities()
+			capabilities.textDocument.foldingRange = {
+				dynamicRegistration = false,
+				lineFoldingOnly = true,
+			}
+			local language_servers = require("lspconfig").util.available_servers()
 			require("ufo").setup({
 				open_fold_hl_timeout = 0,
 				fold_virt_text_handler = handler,
-				provider_selector = function(bufnr, filetype, buftype)
-					return { "treesitter", "indent" }
-				end,
 			})
 			vim.keymap.set("n", "<tab><tab>", "<cmd>foldopen<cr>")
 			vim.keymap.set("n", "<tab>", "<cmd>foldclose<cr>")
