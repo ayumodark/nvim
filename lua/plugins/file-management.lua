@@ -10,7 +10,7 @@ return {
 					side = "right",
 				},
 			})
-			vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<cr>")
+			vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeFindFileToggle<cr>")
 		end,
 	},
 	{
